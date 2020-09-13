@@ -1,48 +1,49 @@
-import React from 'react';
-// import { data } from '../data';
-import Navbar from './Navbar';
-import MovieCard from './MovieCard';
-
+import React from "react";
+import { data } from "../data";
+import Navbar from "./Navbar";
+import MovieCard from "./MovieCard";
 
 class App extends React.Component {
-
-  componentDidMount(){
-
+  componentDidMount() {
+    
+    const {store} =this.props;
+    store.subscribe(()=>{
+      console.log('UPDATED');
+      this.forceUpdate();  //never use this method..
+    });
+    
     // make api call
     // dispatch action
 
-    this.props.store.dispatch({
-      type:'ADD_MOVIES',
-      movies:data
-    })
-  
+    store.dispatch({
+      type: "ADD_MOVIES",
+      movies: data,
+    });
 
+    console.log(this.props.store.getState());
   }
 
-
-
-  render(){
-  const movies=this.props.store.getState();
-  return (
-    <div className='App'>
-      <Navbar />
-      <div className='main'>
-        <div className='tabs'>
-          <div className='tab'>Movies</div>
-          <div className='tab'>Favourites</div>
-        </div>
-        <div className='list'>
-          {movies.map((movie,index) => (
-            <MovieCard movie={movie} key={`movies-${index}`} />
-          ))}
+  render() {
+    console.log('render');
+    const movies = this.props.store.getState();
+    return (
+      <div className="App">
+        <Navbar />
+        <div className="main">
+          <div className="tabs">
+            <div className="tab">Movies</div>
+            <div className="tab">Favourites</div>
+          </div>
+          <div className="list">
+            {movies.map((movie, index) => (
+              <MovieCard movie={movie} key={`movies-${index}`} />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
-}
-
-
 
 // function App(props) {
 
@@ -66,7 +67,6 @@ class App extends React.Component {
 // }
 
 export default App;
-
 
 // {data.map((movie,index) => (
 //   <MovieCard movie={movie} key={`movies-${index}`} />
