@@ -1,18 +1,34 @@
-import {ADD_MOVIES} from '../actions';
+import { ADD_MOVIES, ADD_FAVOURITE } from "../actions";
 
-const initialMoviesState={
-    list:[],
-    favourites:[]
-}
+const initialMoviesState = {
+  list: [],
+  favourites: [],
+};
 export default function movies(state = initialMoviesState, action) {
-  if (action.type === ADD_MOVIES) {
-    return {
+  //   if (action.type === ADD_MOVIES) {
+  //     return {
+  //         ...state,
+  //         list:action.movies
+  //     }
+  //   }
+  // generally switch is preferred over if-else condition..
+
+  switch (action.type) {
+    case ADD_MOVIES:
+      return {
         ...state,
-        list:action.movies
-    }
+        list: action.movies,
+      };
+    case ADD_FAVOURITE:
+      return {
+        ...state,
+        favourites: [action.movie, ...state.favourites],
+      };
+    default:
+      return state;
   }
 
-  return state;
+//   return state;
 }
 
 // const ADD_MOVIES = "ADD_MOVIES";
