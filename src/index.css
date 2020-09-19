@@ -79,7 +79,7 @@ body {
   cursor: pointer;
 }
 #search-btn {
-  background: #f2711c;
+  background: #f5c518;
   height: 44px;
   color: #fff;
   border: none;
@@ -108,7 +108,7 @@ body {
   border: 1px solid #e1e1e1;
 }
 .active-tabs {
-  background: #2185d0 !important;
+  background: #f5c518 !important;
   color: white;
 }
 .main .tabs .tab:hover {
@@ -170,7 +170,7 @@ body {
   font-weight: 600;
 }
 .favourite-btn {
-  background-color: #2185d0;
+  background-color: #25ccf7;
   color: #fff;
 }
 .unfavourite-btn {

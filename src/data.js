@@ -20,16 +20,16 @@ export const data = [
     Ratings: [
       {
         Source: 'Internet Movie Database',
-        Value: '8.0/10'
+        Value: '8.0/10',
       },
       {
         Source: 'Rotten Tomatoes',
-        Value: '91%'
+        Value: '91%',
       },
       {
         Source: 'Metacritic',
-        Value: '69/100'
-      }
+        Value: '69/100',
+      },
     ],
     Metascore: '69',
     imdbRating: '8.0',
@@ -40,7 +40,7 @@ export const data = [
     BoxOffice: '$623,279,547',
     Production: 'Walt Disney Pictures',
     Website: 'N/A',
-    Response: 'True'
+    Response: 'True',
   },
   {
     Title: 'The Dark Knight',
@@ -63,16 +63,16 @@ export const data = [
     Ratings: [
       {
         Source: 'Internet Movie Database',
-        Value: '9.0/10'
+        Value: '9.0/10',
       },
       {
         Source: 'Rotten Tomatoes',
-        Value: '94%'
+        Value: '94%',
       },
       {
         Source: 'Metacritic',
-        Value: '84/100'
-      }
+        Value: '84/100',
+      },
     ],
     Metascore: '84',
     imdbRating: '9.0',
@@ -83,7 +83,7 @@ export const data = [
     BoxOffice: '$533,316,061',
     Production: 'Warner Bros. Pictures/Legendary',
     Website: 'N/A',
-    Response: 'True'
+    Response: 'True',
   },
   {
     Title: 'Iron Man',
@@ -106,16 +106,16 @@ export const data = [
     Ratings: [
       {
         Source: 'Internet Movie Database',
-        Value: '7.9/10'
+        Value: '7.9/10',
       },
       {
         Source: 'Rotten Tomatoes',
-        Value: '94%'
+        Value: '94%',
       },
       {
         Source: 'Metacritic',
-        Value: '79/100'
-      }
+        Value: '79/100',
+      },
     ],
     Metascore: '79',
     imdbRating: '7.9',
@@ -126,7 +126,7 @@ export const data = [
     BoxOffice: '$318,298,180',
     Production: 'Paramount Pictures',
     Website: 'N/A',
-    Response: 'True'
+    Response: 'True',
   },
   {
     Title: 'Iron Man 2',
@@ -150,16 +150,16 @@ export const data = [
     Ratings: [
       {
         Source: 'Internet Movie Database',
-        Value: '7.0/10'
+        Value: '7.0/10',
       },
       {
         Source: 'Rotten Tomatoes',
-        Value: '73%'
+        Value: '73%',
       },
       {
         Source: 'Metacritic',
-        Value: '57/100'
-      }
+        Value: '57/100',
+      },
     ],
     Metascore: '57',
     imdbRating: '7.0',
@@ -170,7 +170,7 @@ export const data = [
     BoxOffice: '$312,057,433',
     Production: 'Paramount Studios',
     Website: 'N/A',
-    Response: 'True'
+    Response: 'True',
   },
   {
     Title: 'Iron Man 3',
@@ -193,16 +193,16 @@ export const data = [
     Ratings: [
       {
         Source: 'Internet Movie Database',
-        Value: '7.2/10'
+        Value: '7.2/10',
       },
       {
         Source: 'Rotten Tomatoes',
-        Value: '79%'
+        Value: '79%',
       },
       {
         Source: 'Metacritic',
-        Value: '62/100'
-      }
+        Value: '62/100',
+      },
     ],
     Metascore: '62',
     imdbRating: '7.2',
@@ -213,7 +213,7 @@ export const data = [
     BoxOffice: '$408,992,272',
     Production: 'Walt Disney Pictures',
     Website: 'N/A',
-    Response: 'True'
+    Response: 'True',
   },
   {
     Title: 'Ronaldo',
@@ -234,12 +234,12 @@ export const data = [
     Ratings: [
       {
         Source: 'Internet Movie Database',
-        Value: '6.4/10'
+        Value: '6.4/10',
       },
       {
         Source: 'Rotten Tomatoes',
-        Value: '17%'
-      }
+        Value: '17%',
+      },
     ],
     Metascore: 'N/A',
     imdbRating: '6.4',
@@ -250,7 +250,7 @@ export const data = [
     BoxOffice: 'N/A',
     Production: 'On The Corner Films',
     Website: 'http://www.ronaldothefilm.com/showtimes',
-    Response: 'True'
+    Response: 'True',
   },
   {
     Title: 'Thor',
@@ -273,16 +273,16 @@ export const data = [
     Ratings: [
       {
         Source: 'Internet Movie Database',
-        Value: '7.0/10'
+        Value: '7.0/10',
       },
       {
         Source: 'Rotten Tomatoes',
-        Value: '77%'
+        Value: '77%',
       },
       {
         Source: 'Metacritic',
-        Value: '57/100'
-      }
+        Value: '57/100',
+      },
     ],
     Metascore: '57',
     imdbRating: '7.0',
@@ -293,7 +293,7 @@ export const data = [
     BoxOffice: '$181,015,141',
     Production: 'Paramount Pictures',
     Website: 'N/A',
-    Response: 'True'
+    Response: 'True',
   },
   {
     Title: 'Thor: The Dark World',
@@ -316,16 +316,16 @@ export const data = [
     Ratings: [
       {
         Source: 'Internet Movie Database',
-        Value: '6.9/10'
+        Value: '6.9/10',
       },
       {
         Source: 'Rotten Tomatoes',
-        Value: '66%'
+        Value: '66%',
       },
       {
         Source: 'Metacritic',
-        Value: '54/100'
-      }
+        Value: '54/100',
+      },
     ],
     Metascore: '54',
     imdbRating: '6.9',
@@ -336,7 +336,7 @@ export const data = [
     BoxOffice: '$206,360,018',
     Production: 'Walt Disney Pictures',
     Website: 'N/A',
-    Response: 'True'
+    Response: 'True',
   },
   {
     Title: 'Thor: Ragnarok',
@@ -359,16 +359,16 @@ export const data = [
     Ratings: [
       {
         Source: 'Internet Movie Database',
-        Value: '7.9/10'
+        Value: '7.9/10',
       },
       {
         Source: 'Rotten Tomatoes',
-        Value: '93%'
+        Value: '93%',
       },
       {
         Source: 'Metacritic',
-        Value: '74/100'
-      }
+        Value: '74/100',
+      },
     ],
     Metascore: '74',
     imdbRating: '7.9',
@@ -379,7 +379,7 @@ export const data = [
     BoxOffice: '$314,971,245',
     Production: 'Walt Disney Pictures',
     Website: 'N/A',
-    Response: 'True'
+    Response: 'True',
   },
   {
     Title: 'Avengers: Infinity War',
@@ -402,16 +402,16 @@ export const data = [
     Ratings: [
       {
         Source: 'Internet Movie Database',
-        Value: '8.5/10'
+        Value: '8.5/10',
       },
       {
         Source: 'Rotten Tomatoes',
-        Value: '85%'
+        Value: '85%',
       },
       {
         Source: 'Metacritic',
-        Value: '68/100'
-      }
+        Value: '68/100',
+      },
     ],
     Metascore: '68',
     imdbRating: '8.5',
@@ -422,7 +422,7 @@ export const data = [
     BoxOffice: '$664,987,816',
     Production: 'Walt Disney Pictures',
     Website: 'N/A',
-    Response: 'True'
+    Response: 'True',
   },
   {
     Title: 'Avengers: Endgame',
@@ -445,16 +445,16 @@ export const data = [
     Ratings: [
       {
         Source: 'Internet Movie Database',
-        Value: '8.5/10'
+        Value: '8.5/10',
       },
       {
         Source: 'Rotten Tomatoes',
-        Value: '94%'
+        Value: '94%',
       },
       {
         Source: 'Metacritic',
-        Value: '78/100'
-      }
+        Value: '78/100',
+      },
     ],
     Metascore: '78',
     imdbRating: '8.5',
@@ -465,7 +465,7 @@ export const data = [
     BoxOffice: 'N/A',
     Production: 'Marvel Studios',
     Website: 'N/A',
-    Response: 'True'
+    Response: 'True',
   },
   {
     Title: 'Man of Steel',
@@ -488,16 +488,16 @@ export const data = [
     Ratings: [
       {
         Source: 'Internet Movie Database',
-        Value: '7.1/10'
+        Value: '7.1/10',
       },
       {
         Source: 'Rotten Tomatoes',
-        Value: '56%'
+        Value: '56%',
       },
       {
         Source: 'Metacritic',
-        Value: '55/100'
-      }
+        Value: '55/100',
+      },
     ],
     Metascore: '55',
     imdbRating: '7.1',
@@ -508,6 +508,6 @@ export const data = [
     BoxOffice: '$291,021,565',
     Production: 'Warner Bros. Pictures',
     Website: 'N/A',
-    Response: 'True'
-  }
+    Response: 'True',
+  },
 ];

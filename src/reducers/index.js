@@ -1,11 +1,12 @@
-import {combineReducers} from 'redux';
+import { combineReducers } from 'redux';
 import {
   ADD_MOVIES,
   ADD_TO_FAVOURITES,
   REMOVE_FROM_FAVOURITES,
   SET_SHOW_FAVOURITES,
-  ADD_SEARCH_RESULT
-} from "../actions";
+  ADD_SEARCH_RESULT,
+  ADD_MOVIE_TO_LIST,
+} from '../actions';
 
 const initialMoviesState = {
   list: [],
@@ -20,7 +21,7 @@ export function movies(state = initialMoviesState, action) {
   //     }
   //   }
   // generally switch is preferred over if-else condition..
-console.log('MOVIES REDUCER');
+  console.log('MOVIES REDUCER');
   switch (action.type) {
     case ADD_MOVIES:
       return {
@@ -45,6 +46,11 @@ console.log('MOVIES REDUCER');
         ...state,
         showFavourites: action.val,
       };
+    case ADD_MOVIE_TO_LIST:
+      return {
+        ...state,
+        list: [action.movie, ...state.list],
+      };
 
     default:
       return state;
@@ -57,6 +63,7 @@ console.log('MOVIES REDUCER');
 
 const initialSearchState = {
   result: {},
+  showSearchResults: false,
 };
 export function search(state = initialSearchState, action) {
   console.log('SEARCH REDUCER');
@@ -65,20 +72,23 @@ export function search(state = initialSearchState, action) {
     case ADD_SEARCH_RESULT:
       return {
         ...state,
-        result: action.movie,
+        result: action.movies,
+        showSearchResults: true,
       };
-   
+    case ADD_MOVIE_TO_LIST:
+      return {
+        ...state,
+        showSearchResults: false,
+      };
 
     default:
       return state;
   }
-
- 
 }
-const intitialRootState = {
-  movies: initialMoviesState,
-  search: initialSearchState,
-};
+// const intitialRootState = {
+//   movies: initialMoviesState,
+//   search: initialSearchState,
+// };
 
 // export default function rootReducer(state = intitialRootState, action) {
 //   return {
@@ -89,6 +99,6 @@ const intitialRootState = {
 
 // redux provides combineReducers func to combine and add more than one reducer as above rootReducer same implementation
 export default combineReducers({
- movies,
-search
-})
+  movies,
+  search,
+});

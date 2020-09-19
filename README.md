@@ -8,4 +8,3 @@
 - Can Add or Remove Favourite Movies.
 - Search Favourite Movie.
 - Displays all Movie info.
-
