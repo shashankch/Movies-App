@@ -46,10 +46,6 @@ class MovieCard extends React.Component {
   }
 }
 
-// function mapStateToProps({movies}) {
-//   return {
-//    movies
-//   };
-// }
+
 
 export default MovieCard;
